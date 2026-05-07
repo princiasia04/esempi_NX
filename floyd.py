@@ -15,6 +15,7 @@ for a, b in fw.items():
 results = {a: dict(b) for a, b in fw.items()}
 print(results)
 
+#codice per stampare grafo
 pos=nx.planar_layout(G) # pos = nx.nx_agraph.graphviz_layout(G)
 nx.draw_networkx(G,pos)
 labels = nx.get_edge_attributes(G,'weight')
